@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Enhanced Image Background Remover</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+    
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Image Background Remover</h1>
+
+    <div id="dropZone" tabindex="0" aria-label="Drag and drop an image or click to select file">
+      Drag & Drop an Image Here or Click to Select
+    </div>
+    <input type="file" id="uploadImage" accept="image/*" />
+
+    <div class="button-group">
+      <button id="removeBtn" disabled>Remove Background</button>
+      <button id="clearBtn">Clear</button>
+      <button id="downloadBtn" style="display:none;">Download Result</button>
+    </div>
+
+    <div id="loader" role="status" aria-live="polite" aria-label="Loading"></div>
+    <div id="errorMsg" role="alert"></div>
+
+    <div>
+      <h3>Original Image:</h3>
+      <img id="imagePreview" alt="Original uploaded image preview" />
+    </div>
+
+    <div>
+      <h3>Background Removed:</h3>
+      <img id="bgRemoved" alt="Image with background removed preview" />
+    </div>
+  </div>
+
+  <script src="script.js">
+   
+  </script>
+</body>
+
+</html>
